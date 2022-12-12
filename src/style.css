@@ -1,0 +1,35 @@
+body {
+    padding: 20px;
+}
+
+.input-text {
+    position: absolute;
+    padding-left: 2px;
+    padding-right: 2px;
+
+    height:min-content;
+    left: 10px;
+    font-weight: 700;
+    bottom: 0.8rem;
+    font-size: 0.8rem;
+
+    color: #94a3b8;
+
+    display: inline-block;
+    width:max-content;
+    max-width: max-content;
+
+    transition: color 100ms ease-out, left 100ms ease-out, font-size 100ms ease-out, bottom 100ms ease-out;
+}
+
+.input:focus + .input-text-anim {
+
+    font-size: 0.7rem;
+
+    left: 10px;
+    top: -0.3rem;
+
+    color: #000;
+
+    background-color: white;
+}
